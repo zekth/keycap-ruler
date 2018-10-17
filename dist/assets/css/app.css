@@ -1,0 +1,56 @@
+
+.credit-container[data-v-655cc7b6] {
+  z-index: -1;
+  background: #bf8226;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bf8226 32%, #000000 74%, #000000 74%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #bf8226 32%, #000000 74%, #000000 74%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #bf8226 32%, #000000 74%, #000000 74%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf8226', endColorstr='#000000',GradientType=0 );
+  font-family: montserratbold,sans-serif;
+  color: #e0e0e0;
+  position: relative;
+  border-radius: 11px;
+  width: 317px;
+  height: 199px;
+}
+.credit-container span[data-v-655cc7b6] {
+    position: absolute;
+}
+.credit-container .brand[data-v-655cc7b6] {
+    top: 12px;
+    left: 21px;
+    font-size: 25px;
+}
+.credit-container .card-number[data-v-655cc7b6] {
+    top: 110px;
+    left: 26px;
+    font-size: 21px;
+}
+.credit-container .exp[data-v-655cc7b6] {
+    top: 147px;
+    left: 133px;
+    font-size: 14px;
+}
+.credit-container .name[data-v-655cc7b6] {
+    top: 156px;
+    left: 21px;
+}
+.credit-container .company[data-v-655cc7b6] {
+    top: 172px;
+    left: 21px;
+}
+.credit-container .chip[data-v-655cc7b6] {
+    width: 47px;
+    height: 43px;
+    position: absolute;
+    top: 63px;
+    left: 22px;
+    background-color: #525252;
+    border-radius: 5px;
+}
+
+
