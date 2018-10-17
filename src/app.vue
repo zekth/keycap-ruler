@@ -31,9 +31,15 @@ export default {
   components: { CreditCard, Zoom, KeyChart, KeyRuler },
   methods: {
     updateZoom(value) {
-      this.$refs.CreditCard.$el.style.zoom = value
-      this.$refs.Keys.$el.style.zoom = value
-      this.$refs.KeyRuler.$el.style.zoom = value
+      this.$refs.CreditCard.$el.style.zoom = `${value}%`
+      this.$refs.Keys.$el.style.zoom = `${value}%`
+      this.$refs.KeyRuler.$el.style.zoom = `${value}%`
+      this.$refs.CreditCard.$el.style.MozTransform = `scale(${value / 100})`
+      this.$refs.CreditCard.$el.style.MozTransformOrigin = '0 0'
+      this.$refs.Keys.$el.style.MozTransform = `scale(${value / 100})`
+      this.$refs.Keys.$el.style.MozTransformOrigin = '0 0'
+      this.$refs.KeyRuler.$el.style.MozTransform = `scale(${value / 100})`
+      this.$refs.KeyRuler.$el.style.MozTransformOrigin = '0 0'
     }
   }
 }

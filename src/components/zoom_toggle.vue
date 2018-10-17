@@ -1,27 +1,52 @@
 <template>
-  <div>
-    <input ref="zoomSlider" id="zoom" class="slider" type="range" step="1" v-model="zoomValue" min="50" max="250" v-on:input="zoomChange" >
-    <button class="button is-primary" v-on:click="resetZoom">Reset Zoom</button>
+  <div class="zoomControl">
+    <div style="text-align:center">
+      <button class="button is-success" v-on:click="ZoomOut">-</button>
+      <button class="button is-success" v-on:click="ZoomIn">+</button>
+    </div>
+    <div>
+      <input ref="zoomSlider" id="zoom" class="slider" type="range" step="1" v-model="zoomValue" min="50" max="250" v-on:input="zoomChange" >
+    </div>
+    <div>
+      <button class="button is-primary is-fullwidth" v-on:click="resetZoom">Reset Zoom</button>
+    </div>
   </div>
 </template>
 
 <script>
+const MAX_ZOOM = 250
+const MIN_ZOOM = 50
 export default {
   methods: {
+    ZoomIn: function(e) {
+      let z = parseInt(this.zoomValue) + 1
+      if (z > MAX_ZOOM) {
+        return
+      }
+      this.$refs.zoomSlider.value = z
+      this.$refs.zoomSlider.dispatchEvent(new Event('input', { bubbles: true }))
+    },
+    ZoomOut: function(e) {
+      let z = parseInt(this.zoomValue) - 1
+      if (z < MIN_ZOOM) {
+        return
+      }
+      this.$refs.zoomSlider.value = z
+      this.$refs.zoomSlider.dispatchEvent(new Event('input', { bubbles: true }))
+    },
     zoomChange: function(event) {
       if (localStorage) {
         localStorage.zoomValue = event.target.value
       }
-      this.$emit('updateZoom', `${event.target.value}%`)
+      this.$emit('updateZoom', event.target.value)
     },
     resetZoom: function(event) {
-      event.preventDefault()
       this.$refs.zoomSlider.value = 100
       this.$refs.zoomSlider.dispatchEvent(new Event('input', { bubbles: true }))
     }
   },
   mounted() {
-    this.$emit('updateZoom', `${this.zoomValue}%`)
+    this.$emit('updateZoom', this.zoomValue)
   },
   beforeMount() {
     if (localStorage.zoomValue) {
@@ -34,8 +59,8 @@ export default {
 </script>
 
 <style>
-#zoom {
-  margin-bottom: 10px;
+.zoomControl div{
+  margin-bottom: 15px;
 }
 input[type='range'].slider {
   -webkit-appearance: none;
