@@ -1,24 +1,26 @@
 <template>
-  <div>
-    <div class="columns">
-      <div class="column is-one-third">
-        <div  class="content">
-        <h3>Referal</h3>
-        <CreditCard ref="CreditCard"/>
-        <h3>Zoom</h3>
-        <Zoom v-on:updateZoom="updateZoom"/>
-      </div>
-      </div>
-      <div class="column is-two-third">
-        <div  class="content">
-          <h3>Key Charts</h3>
-          <KeyChart ref="Keys"/>
-          <h3>Keycap Ruler</h3>
-        <KeyRuler ref="KeyRuler"/>
+  <section class="section">
+    <div class="content">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="content" style="overflow:hidden">
+          <h3>Referal</h3>
+          <CreditCard ref="CreditCard"/>
+          <h3>Zoom</h3>
+          <Zoom v-on:updateZoom="updateZoom"/>
+        </div>
+        </div>
+        <div class="column is-two-third">
+          <div  class="content">
+            <h3>Key Charts</h3>
+            <KeyChart ref="Keys"/>
+            <h3>Keycap Ruler</h3>
+          <KeyRuler ref="KeyRuler"/>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
