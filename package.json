@@ -4,7 +4,7 @@
   "description": "A web app to know the size of you keycaps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo 'lolnop'",
     "build": "./node_modules/.bin/webpack -d",
     "dev": "npm run build && webpack-dev-server --progress --colors"
   },
