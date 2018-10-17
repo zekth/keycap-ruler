@@ -44,7 +44,7 @@ export default {
 }
 .sep{
   display: inline-block;
-  width:16px;
+  width: 17.4px;
   height: 35px;
   border-right: solid 3px black;
   box-sizing: border-box;
