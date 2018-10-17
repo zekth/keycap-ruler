@@ -9,8 +9,8 @@
 export default {
   methods: {
     zoomChange: function(event) {
-      if(localStorage) {
-        localStorage.zoomValue=event.target.value
+      if (localStorage) {
+        localStorage.zoomValue = event.target.value
       }
       this.$emit('updateZoom', `${event.target.value}%`)
     },
@@ -21,11 +21,11 @@ export default {
     }
   },
   mounted() {
-      this.$emit('updateZoom', `${this.zoomValue}%`)
+    this.$emit('updateZoom', `${this.zoomValue}%`)
   },
   beforeMount() {
-    if(localStorage.zoomValue) {
-      this.zoomValue=localStorage.zoomValue
+    if (localStorage.zoomValue) {
+      this.zoomValue = localStorage.zoomValue
     } else {
       this.zoomValue = document.body.style.zoom
     }
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style>
-#zoom{
+#zoom {
   margin-bottom: 10px;
 }
 input[type='range'].slider {

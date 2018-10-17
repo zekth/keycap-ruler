@@ -28,7 +28,7 @@ import KeyRuler from './components/keycaps/ruler'
 import Zoom from './components/zoom_toggle'
 export default {
   name: 'App',
-  components: { CreditCard, Zoom, KeyChart,KeyRuler },
+  components: { CreditCard, Zoom, KeyChart, KeyRuler },
   methods: {
     updateZoom(value) {
       this.$refs.CreditCard.$el.style.zoom = value
