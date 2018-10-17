@@ -1,0 +1,125 @@
+<template>
+  <div>
+    <input ref="zoomSlider" id="zoom" class="slider" type="range" step="1" v-model="zoomValue" min="50" max="250" v-on:input="zoomChange" >
+    <button class="button is-primary" v-on:click="resetZoom">Reset Zoom</button>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    zoomChange: function(event) {
+      if(localStorage) {
+        localStorage.zoomValue=event.target.value
+      }
+      this.$emit('updateZoom', `${event.target.value}%`)
+    },
+    resetZoom: function(event) {
+      event.preventDefault()
+      this.$refs.zoomSlider.value = 100
+      this.$refs.zoomSlider.dispatchEvent(new Event('input', { bubbles: true }))
+    }
+  },
+  mounted() {
+      this.$emit('updateZoom', `${this.zoomValue}%`)
+  },
+  beforeMount() {
+    if(localStorage.zoomValue) {
+      this.zoomValue=localStorage.zoomValue
+    } else {
+      this.zoomValue = document.body.style.zoom
+    }
+  }
+}
+</script>
+
+<style>
+#zoom{
+  margin-bottom: 10px;
+}
+input[type='range'].slider {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 5.9px 0;
+}
+input[type='range'].slider:focus {
+  outline: none;
+}
+input[type='range'].slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15.2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #474d4d;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+input[type='range'].slider::-webkit-slider-thumb {
+  box-shadow: 0px 0px 1px #220000, 0px 0px 0px #3c0000;
+  border: 0.2px solid rgba(31, 31, 32, 0.16);
+  height: 27px;
+  width: 11px;
+  border-radius: 0px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.9px;
+}
+input[type='range'].slider:focus::-webkit-slider-runnable-track {
+  background: #5d6565;
+}
+input[type='range'].slider::-moz-range-track {
+  width: 100%;
+  height: 15.2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #474d4d;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+input[type='range'].slider::-moz-range-thumb {
+  box-shadow: 0px 0px 1px #220000, 0px 0px 0px #3c0000;
+  border: 0.2px solid rgba(31, 31, 32, 0.16);
+  height: 27px;
+  width: 11px;
+  border-radius: 0px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type='range'].slider::-ms-track {
+  width: 100%;
+  height: 15.2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type='range'].slider::-ms-fill-lower {
+  background: #313535;
+  border: 0px solid #010101;
+  border-radius: 0px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type='range'].slider::-ms-fill-upper {
+  background: #474d4d;
+  border: 0px solid #010101;
+  border-radius: 0px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type='range'].slider::-ms-thumb {
+  box-shadow: 0px 0px 1px #220000, 0px 0px 0px #3c0000;
+  border: 0.2px solid rgba(31, 31, 32, 0.16);
+  height: 27px;
+  width: 11px;
+  border-radius: 0px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 15.2px;
+}
+input[type='range'].slider:focus::-ms-fill-lower {
+  background: #474d4d;
+}
+input[type='range'].slider:focus::-ms-fill-upper {
+  background: #5d6565;
+}
+</style>
