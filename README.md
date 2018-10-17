@@ -6,8 +6,7 @@ Here we go: [Click here](https://zekth.github.io/keycap-ruler/)
 
 Proudly using:
 
-![Bulmacss](https://bulma.io/images/bulma-logo.png | width=250)
-![VueJs](https://vuejs.org/images/logo.png | width=250)
+<img width="200" alt="portfolio_view" src="https://bulma.io/images/bulma-logo.png"><img height="80" alt="portfolio_view" src="https://vuejs.org/images/logo.png">
 
 # How does it Work?
 
