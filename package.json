@@ -2,7 +2,6 @@
   "name": "keycap-ruler",
   "version": "1.0.0",
   "description": "A web app to know the size of you keycaps",
-  "main": "index.js",
   "scripts": {
     "test": "echo 'lolnop'",
     "build": "./node_modules/.bin/webpack",
