@@ -19,7 +19,7 @@
           </div>
           <hr v-bind:class="{break:CC_overflow}">
           <div v-bind:class="keysClass">
-            <div class="content">
+            <div class="content" style="overflow-x:hidden;">
               <h3>Key Charts</h3>
               <KeyChart ref="Keys"/>
               <h3>Keycap Ruler</h3>
