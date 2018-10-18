@@ -2,8 +2,8 @@
   <section class="section">
     <div class="content">
       <div class="columns" style="flex-flow:wrap;">
-          <div v-bind:class="referalContainerClass">
-            <div class="content" style="overflow:hidden">
+          <div id="referalContainer" ref="referalContainer" v-bind:class="referalContainerClass">
+            <div class="content">
               <div class="columns" style="flex-flow:wrap;">
                 <div v-bind:class="zoomClass">
                   <h3>Zoom</h3>
@@ -20,10 +20,10 @@
           <hr v-bind:class="{break:CC_overflow}">
           <div v-bind:class="keysClass">
             <div class="content" style="overflow-x:hidden;">
+              <h3 class="is-hidden-mobile">Keycap Ruler</h3>
+              <KeyRuler style="margin-bottom:70px;" class="is-hidden-mobile" ref="KeyRuler"/>
               <h3>Key Charts</h3>
-              <KeyChart ref="Keys"/>
-              <h3>Keycap Ruler</h3>
-              <KeyRuler ref="KeyRuler"/>
+              <KeyChart id="Keys" ref="Keys"/>
             </div>
           </div>
       </div>
@@ -58,12 +58,20 @@ export default {
       this.$refs.KeyRuler.$el.style.MozTransformOrigin = '0 0'
 
       // check the size of the credit card
-      let CC_space = parseInt(window.getComputedStyle(this.$refs.CreditCard.$el).width)
-      let CC_size = CC_space * factor
-      if (CC_size > CC_space) {
-        this.CC_overflow = true
+      let CC_width = parseInt(window.getComputedStyle(this.$refs.CreditCard.$el).width)
+      let CC_height = parseInt(window.getComputedStyle(this.$refs.CreditCard.$el).height)
+      let CC_realWidth = CC_width * factor
+      let CC_realHeight = CC_height * factor
+      if (window.innerWidth < 768) {
+        this.$refs.referalContainer.style.height = ``
       } else {
-        this.CC_overflow = false
+        if (CC_realWidth > CC_width) {
+          this.CC_overflow = true
+          this.$refs.referalContainer.style.height = `${CC_realHeight + 40}px`
+        } else {
+          this.CC_overflow = false
+          this.$refs.referalContainer.style.height = ``
+        }
       }
     }
   },
@@ -96,18 +104,18 @@ export default {
         'is-full': this.CC_overflow
       }
     }
-  },
-  mounted() {
-    this.CC_overflow = false
   }
 }
 </script>
 
 <style>
-hr.break{
-  width:100%;
+hr{
+  background: none;
 }
-.zoomHolder{
+hr.break {
+  width: 100%;
+}
+.zoomHolder {
   max-width: 300px;
   text-align: center;
   margin: 0 auto;

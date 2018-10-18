@@ -13,7 +13,7 @@ export default {
   computed: {
     computedStyle: function() {
       let v = false
-      if (window.innerWidth < window.innerHeight && window.innerWidth < 540) {
+      if (window.innerWidth < window.innerHeight && window.innerWidth < 768) {
         v = true
       }
       let w = this.width
@@ -31,7 +31,7 @@ export default {
       }
     },
     isVertical: function() {
-      if (window.innerWidth < window.innerHeight && window.innerWidth < 540) {
+      if (window.innerWidth < window.innerHeight && window.innerWidth < 768) {
         return true
       } else {
         return false
