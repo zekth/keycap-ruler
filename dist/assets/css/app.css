@@ -54,3 +54,32 @@
 }
 
 
+.keycap {
+  background: white;
+  display: inline-block;
+  border: solid 3px black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 7px;
+  margin: 0 2px 2px 0;
+}
+.keycap.vertical {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.keycap.vertical .keycap-size {
+      float: none;
+      text-align: center;
+      display: block;
+}
+.keycap .keycap-content {
+    margin: 0 auto;
+}
+.keycap .keycap-size {
+    float: right;
+    margin: 2px 5px;
+}
+
+
