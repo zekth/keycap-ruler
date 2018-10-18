@@ -110,5 +110,6 @@ hr.break{
 .zoomHolder{
   max-width: 300px;
   text-align: center;
+  margin: 0 auto;
 }
 </style>

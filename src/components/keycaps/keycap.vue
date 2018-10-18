@@ -1,24 +1,47 @@
 <template>
-  <div class="keycap" v-bind:class="[name]" >
+  <div class="keycap" v-bind:style="computedStyle" v-bind:class="[isVertical?'vertical':'',name]" >
     <span class="keycap-size">{{size}}</span>
     <span class="keycap-content">{{content}}</span>
   </div>
 </template>
 
 <script>
+const defaultHeight = 68
+const defaultWidth = 68
 export default {
-  props: ['content', 'size', 'name']
+  props: ['content', 'size', 'width'],
+  computed: {
+    computedStyle: function() {
+      let v = false
+      if (window.innerWidth < window.innerHeight && window.innerWidth < 540) {
+        v = true
+      }
+      let w = this.width
+      let h = defaultHeight
+      if (v) {
+        return {
+          height: `${w}px`,
+          width: `${h}px`
+        }
+      } else {
+        return {
+          height: `${h}px`,
+          width: `${w}px`
+        }
+      }
+    },
+    isVertical: function() {
+      if (window.innerWidth < window.innerHeight && window.innerWidth < 540) {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
 }
 </script>
 
-<style>
-.keycap-content {
-  margin: 0 auto;
-}
-.keycap-size {
-  float: right;
-  margin: 2px 5px;
-}
+<style lang="sass">
 .keycap {
   background: white;
   display: inline-block;
@@ -28,6 +51,22 @@ export default {
   -webkit-box-sizing: border-box;
   border-radius: 7px;
   margin: 0 2px 2px 0;
-  height: 68px;
+  &.vertical {
+    display:block;
+    margin:0 auto;
+    margin-bottom:20px;
+    .keycap-size {
+      float:none;
+      text-align:center;
+      display:block;
+    }
+  }
+  .keycap-content {
+    margin: 0 auto;
+  }
+  .keycap-size {
+    float: right;
+    margin: 2px 5px;
+  }
 }
 </style>

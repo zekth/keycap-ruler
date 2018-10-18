@@ -1,17 +1,16 @@
 <template>
-  <Keycap size="1.5U" name="U150" v-bind:content="content"/>
+  <Keycap size="1.5U" v-bind:width="width" v-bind:content="content"/>
 </template>
 
 <script>
 import Keycap from './keycap'
 export default {
   components: { Keycap },
+  data: function() {
+    return {
+      width: 102
+    }
+  },
   props: ['content']
 }
 </script>
-
-<style>
-.U150{
-    width: 102px;
-}
-</style>
