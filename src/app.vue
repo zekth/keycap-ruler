@@ -10,7 +10,7 @@
                   <Zoom class="zoomHolder" v-on:updateZoom="updateZoom"/>
                 </div>
                 <hr v-bind:class="{break:!CC_overflow}">
-                <div v-bind:class="ccClass">
+                <div style="overflow-x:hidden" v-bind:class="ccClass">
                   <h3>Referal</h3>
                   <CreditCard ref="CreditCard"/>
                 </div>
@@ -62,15 +62,21 @@ export default {
       let CC_height = parseInt(window.getComputedStyle(this.$refs.CreditCard.$el).height)
       let CC_realWidth = CC_width * factor
       let CC_realHeight = CC_height * factor
+      console.log(navigator.userAgent)
+      let isFF = navigator.userAgent.toLowerCase().indexOf('firefox') > -1
       if (window.innerWidth < 768) {
         this.$refs.referalContainer.style.height = ``
       } else {
         if (CC_realWidth > CC_width) {
           this.CC_overflow = true
-          this.$refs.referalContainer.style.height = `${CC_realHeight + 40}px`
+          if (isFF) {
+            this.$refs.referalContainer.style.height = `${CC_realHeight + 40}px`
+          }
         } else {
           this.CC_overflow = false
-          this.$refs.referalContainer.style.height = ``
+          if (isFF) {
+            this.$refs.referalContainer.style.height = ``
+          }
         }
       }
     }
@@ -109,7 +115,7 @@ export default {
 </script>
 
 <style>
-hr{
+hr {
   background: none;
 }
 hr.break {
