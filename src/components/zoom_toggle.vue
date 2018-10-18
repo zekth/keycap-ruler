@@ -60,8 +60,8 @@ export default {
 
 <style>
 .zoomControl div{
-  margin-bottom: 15px;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 input[type='range'].slider {
   -webkit-appearance: none;
