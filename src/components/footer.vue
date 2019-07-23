@@ -2,11 +2,11 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Keycap Ruler</strong> by
+        {{ $t('footer.title') }}
         <a target="_blank" href="https://zekth.github.io/">Vincent Le Goff</a>.
       </p>
       <p>
-        Proudly Using
+        {{ $t('footer.proud') }}
         <br />
         <a target="_blank" href="https://bulma.io/">
           <img
@@ -29,6 +29,3 @@ export default {
   name: 'appFooter'
 }
 </script>
-
-<style>
-</style>

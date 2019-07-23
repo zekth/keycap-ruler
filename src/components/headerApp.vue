@@ -2,8 +2,8 @@
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">Keycap Ruler</h1>
-        <h2 class="subtitle">Know the standard size of your caps</h2>
+        <h1 class="title">{{ $t('header.title') }}</h1>
+        <h2 class="subtitle">{{ $t('header.subTitle') }}</h2>
       </div>
     </div>
   </section>
@@ -14,6 +14,3 @@ export default {
   name: 'headerApp'
 }
 </script>
-
-<style>
-</style>
