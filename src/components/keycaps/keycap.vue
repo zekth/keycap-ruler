@@ -7,7 +7,7 @@
 
 <script>
 const defaultHeight = 68
-const defaultWidth = 68
+// const defaultWidth = 68
 export default {
   props: ['content', 'size', 'width'],
   computed: {
