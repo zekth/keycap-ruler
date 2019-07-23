@@ -1,19 +1,17 @@
 <template>
   <div class="key-ref">
-    <U100 content=""/>
-    <U125 content=""/>
-    <U150 content=""/>
-    <U175 content=""/>
-    <div class="break"/>
-    <U200 content=""/>
-    <U225 content=""/>
-    <U275 content=""/>
-    <div class="break"/>
-    <U300 content=""/>
-    <div class="break"/>
-    <U600 content=""/>
-    <U625 content=""/>
-    <U700 content=""/>
+    <U100 content />
+    <U125 content />
+    <U150 content />
+    <U175 content />
+    <div class="break" />
+    <U200 content />
+    <U225 content />
+    <U275 content />
+    <div class="break" />
+    <U300 content />
+    <div class="break" />
+    <U625 content />
   </div>
 </template>
 
@@ -26,11 +24,12 @@ import U200 from './U200'
 import U225 from './U225'
 import U275 from './U275'
 import U300 from './U300'
-import U600 from './U600'
+// import U600 from './U600'
 import U625 from './U625'
-import U700 from './U700'
+// import U700 from './U700'
 export default {
-  components: { U100, U125, U150, U175, U200, U225, U275, U300, U600, U625, U700 }
+  name: 'key-chart',
+  components: { U100, U125, U150, U175, U200, U225, U275, U300, U625 }
 }
 </script>
 

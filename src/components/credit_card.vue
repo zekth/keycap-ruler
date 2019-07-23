@@ -1,17 +1,18 @@
 <template>
-    <div ref="CreditCard" class="credit-container">
-      <span class="brand">Da Keebs Kompany</span>
-      <span class="card-number">1337 1337 1337 1337</span>
-      <span class="exp">02/21</span>
-      <span class="name">Mr. Foo Bar</span>
-      <span class="company">r/MechanicalKeyboards</span>
-      <div class="chip"></div>
-    </div>
+  <div ref="CreditCard" class="credit-container">
+    <span class="brand">Da Keebs Kompany</span>
+    <span class="card-number">1337 1337 1337 1337</span>
+    <span class="exp">02/21</span>
+    <span class="name">Mr. Foo Bar</span>
+    <span class="company">r/MechanicalKeyboards</span>
+    <div class="chip"></div>
+  </div>
 </template>
 
 <script>
 // ISO 7810 CreditCard size : 85,6 X 53,98 mm
 export default {
+  name: 'credit_card'
 }
 </script>
 
