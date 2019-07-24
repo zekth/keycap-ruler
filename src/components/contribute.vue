@@ -14,7 +14,8 @@
           <h3>{{ $t('contribute.howTo') }}</h3>
           <p>
             {{ $t('contribute.goOn') }}
-            <a href="https://github.com/zekth/keycap-ruler">Github</a>, {{ $t('contribute.fork') }}
+            <a href="https://github.com/zekth/keycap-ruler">Github</a>
+            , {{ $t('contribute.fork') }}
           </p>
         </div>
       </section>

@@ -21,9 +21,9 @@
           <hr v-bind:class="{break:ccOverflow}" />
           <div v-bind:class="keysClass">
             <div class="content" style="overflow-x:hidden;">
-              <h3 class="is-hidden-mobile">Keycap Ruler</h3>
+              <h3 class="is-hidden-mobile">{{ $t("rulerApp.ruler") }}</h3>
               <KeyRuler style="margin-bottom:70px;" class="is-hidden-mobile" ref="KeyRuler" />
-              <h3>Key Charts</h3>
+              <h3>{{ $t("rulerApp.chart") }}</h3>
               <KeyChart id="Keys" ref="Keys" />
             </div>
           </div>

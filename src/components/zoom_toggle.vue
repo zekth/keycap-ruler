@@ -18,7 +18,7 @@
       />
     </div>
     <div>
-      <button class="button is-primary is-fullwidth" v-on:click="resetZoom">Reset Zoom</button>
+      <button class="button is-primary is-fullwidth" v-on:click="resetZoom">{{ $t('zoomReset') }}</button>
     </div>
   </div>
 </template>

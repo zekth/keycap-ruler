@@ -1,10 +1,7 @@
 <template>
   <footer class="footer">
     <div class="content has-text-centered">
-      <p>
-        {{ $t('footer.title') }}
-        <a target="_blank" href="https://zekth.github.io/">Vincent Le Goff</a>.
-      </p>
+      <p v-html="$t('footer.title')" />
       <p>
         {{ $t('footer.proud') }}
         <br />
