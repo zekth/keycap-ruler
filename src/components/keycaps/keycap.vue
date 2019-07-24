@@ -1,5 +1,5 @@
 <template>
-  <div class="keycap" v-bind:style="computedStyle" v-bind:class="[isVertical?'vertical':'',name]" >
+  <div class="keycap" v-bind:style="computedStyle" v-bind:class="[isVertical?'vertical':'',name]">
     <span class="keycap-size">{{size}}</span>
     <span class="keycap-content">{{content}}</span>
   </div>
@@ -10,6 +10,11 @@ const defaultHeight = 68
 // const defaultWidth = 68
 export default {
   props: ['content', 'size', 'width'],
+  data() {
+    return {
+      name: 'Keycap'
+    }
+  },
   computed: {
     computedStyle: function() {
       let v = false

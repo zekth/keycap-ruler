@@ -5,6 +5,7 @@
 <script>
 import Keycap from './keycap'
 export default {
+  name: 'U225',
   components: { Keycap },
   data: function() {
     return {

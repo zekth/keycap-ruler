@@ -5,10 +5,20 @@
       <button class="button is-success" v-on:click="ZoomIn">+</button>
     </div>
     <div>
-      <input ref="zoomSlider" id="zoom" class="slider" type="range" step="1" v-model="zoomValue" min="50" max="250" v-on:input="zoomChange" >
+      <input
+        ref="zoomSlider"
+        id="zoom"
+        class="slider"
+        type="range"
+        step="1"
+        v-model="zoomValue"
+        min="50"
+        max="250"
+        v-on:input="zoomChange"
+      />
     </div>
     <div>
-      <button class="button is-primary is-fullwidth" v-on:click="resetZoom">Reset Zoom</button>
+      <button class="button is-primary is-fullwidth" v-on:click="resetZoom">{{ $t('zoomReset') }}</button>
     </div>
   </div>
 </template>
@@ -17,9 +27,10 @@
 const MAX_ZOOM = 250
 const MIN_ZOOM = 50
 export default {
+  name: 'zoom_toggle',
   methods: {
     ZoomIn: function(e) {
-      let z = parseInt(this.zoomValue) + 1
+      const z = parseInt(this.zoomValue) + 1
       if (z > MAX_ZOOM) {
         return
       }
@@ -27,7 +38,7 @@ export default {
       this.$refs.zoomSlider.dispatchEvent(new Event('input', { bubbles: true }))
     },
     ZoomOut: function(e) {
-      let z = parseInt(this.zoomValue) - 1
+      const z = parseInt(this.zoomValue) - 1
       if (z < MIN_ZOOM) {
         return
       }
@@ -59,7 +70,7 @@ export default {
 </script>
 
 <style>
-.zoomControl div{
+.zoomControl div {
   margin: 0 auto;
   margin-bottom: 15px;
 }
