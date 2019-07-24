@@ -42,11 +42,12 @@ const messages = {
       chart: 'Tableau des Keycaps'
     },
     footer: {
-      title: '<strong>Keycap Ruler</strong> par <a target="_blank" href="https://zekth.github.io/">Vincent Le Goff</a>.',
+      title:
+        '<strong>Keycap Ruler</strong> par <a target="_blank" href="https://zekth.github.io/">Vincent Le Goff</a>.',
       proud: 'Utilise fièrement'
     },
     contribute: {
-      feelFree: 'N\'hésitez pas à contribuer',
+      feelFree: "N'hésitez pas à contribuer",
       howTo: 'Comment puis-je contribuer?',
       goOn: 'Allez sur',
       fork: 'fork le projet et envoyez votre Pull Request.'
@@ -63,7 +64,7 @@ const messages = {
       whyUi: "Pourquoi l'interface est bizarre?",
       broken: "Ma carte bancaire ne correspond pas. C'est pété!!",
       one:
-        "Si vous êtes dans le hobbie du clavier mécanique (addiction? Drogue? NANI?!), vous avez des fois souffert du soucis de trouver la bonne taille de keycap. 2.25U or 2.5U?! PourKEUA?! Alors au lieu de comparer les touches entre elle mêmes (si vous avez des touches de référence), alors voici un tableaux des touches.",
+        'Si vous êtes dans le hobbie du clavier mécanique (addiction? Drogue? NANI?!), vous avez des fois souffert du soucis de trouver la bonne taille de keycap. 2.25U or 2.5U?! PourKEUA?! Alors au lieu de comparer les touches entre elle mêmes (si vous avez des touches de référence), alors voici un tableaux des touches.',
       two:
         'Vous pouvez voir l\'image de référence d\'une carte de crédit. Les cartes de crédits sont normalisées avec la norme <a target="_blank" href="https://en.wikipedia.org/wiki/ISO/IEC_7810">ISO 7810 ID-1</a>. Alors le tableau présenté est fait en fonction de cette référence. Si vous n\'avez pas de carte de crédit, braquez une banque ou alors volez celle de votre maman.',
       three:
