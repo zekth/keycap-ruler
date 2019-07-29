@@ -15,6 +15,7 @@ import headerApp from './components/headerApp.vue'
 import appFooter from './components/footer.vue'
 import contribute from './components/contribute.vue'
 import { Fragment } from 'vue-fragment'
+import './assets/sass/style.scss'
 
 export default {
   name: 'app',
