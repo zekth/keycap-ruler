@@ -82,4 +82,12 @@
     margin: 2px 5px;
 }
 
+footer.footer {
+  background-color: #020b19;
+  color: white; }
+  footer.footer a {
+    color: #fdfdfd;
+    font-weight: bold; }
+  footer.footer strong {
+    color: white; }
 
