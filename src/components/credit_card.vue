@@ -1,9 +1,9 @@
 <template>
   <div ref="CreditCard" class="credit-container">
-    <span class="brand">Da Keebs Kompany</span>
-    <span class="card-number">1337 1337 1337 1337</span>
+    <span class="brand">Da ISO Bank</span>
+    <span class="card-number">4 8 15 16 23 42</span>
     <span class="exp">02/21</span>
-    <span class="name">Mr. Foo Bar</span>
+    <span class="name">Mr. AZERTY</span>
     <span class="company">r/MechanicalKeyboards</span>
     <div class="chip"></div>
   </div>

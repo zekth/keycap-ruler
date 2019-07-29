@@ -1,6 +1,6 @@
 <template>
   <Fragment>
-    <section class="hero is-light">
+    <section class="hero is-info">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">{{ $t('contribute.feelFree') }}</h1>

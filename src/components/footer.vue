@@ -3,18 +3,12 @@
     <div class="content has-text-centered">
       <p v-html="$t('footer.title')" />
       <p>
-        {{ $t('footer.proud') }}
-        <br />
-        <a target="_blank" href="https://bulma.io/">
-          <img
+        <a target="_blank" href="https://claviers-mecaniques.fr/">
+          <img src="@/assets/MKFR_Logo.png"
             width="200"
-            alt="bulma css"
+            alt="MK Fr"
             style="width: 120px;"
-            src="https://bulma.io/images/bulma-logo.png"
           />
-        </a>
-        <a target="_blank" href="https://vuejs.org/">
-          <img style="height: 30px;" alt="vuejs" src="https://vuejs.org/images/logo.png" />
         </a>
       </p>
     </div>
