@@ -11,7 +11,9 @@
     <div class="break" />
     <U300 content />
     <div class="break" />
+    <U600 content />
     <U625 content />
+    <U700 content />
   </div>
 </template>
 
@@ -24,12 +26,12 @@ import U200 from './U200'
 import U225 from './U225'
 import U275 from './U275'
 import U300 from './U300'
-// import U600 from './U600'
+import U600 from './U600'
 import U625 from './U625'
-// import U700 from './U700'
+import U700 from './U700'
 export default {
   name: 'key-chart',
-  components: { U100, U125, U150, U175, U200, U225, U275, U300, U625 }
+  components: { U100, U125, U150, U175, U200, U225, U275, U300, U600, U625, U700 }
 }
 </script>
 
