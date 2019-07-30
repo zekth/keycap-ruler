@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                   <td>1.75</td>
-                  <td>31.5</td>
+                  <td>32.5</td>
                 </tr>
                 <tr>
                   <td>2</td>
@@ -35,15 +35,15 @@
                 </tr>
                 <tr>
                   <td>2.25</td>
-                  <td>40.5</td>
+                  <td>42.5</td>
                 </tr>
                 <tr>
                   <td>2.75</td>
-                  <td>49.5</td>
+                  <td>51.5</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>54</td>
+                  <td>56</td>
                 </tr>
                 <tr>
                   <td>6</td>
@@ -51,7 +51,7 @@
                 </tr>
                 <tr>
                   <td>6.25</td>
-                  <td>112.5</td>
+                  <td>118</td>
                 </tr>
                 <tr>
                   <td>7</td>
