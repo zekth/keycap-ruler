@@ -2,6 +2,7 @@
   <Fragment>
     <header-app />
     <rulerApp />
+    <rulerMeasures />
     <howitworks />
     <contribute />
     <appFooter />
@@ -10,6 +11,7 @@
 
 <script>
 import rulerApp from './components/rulerApp.vue'
+import rulerMeasures from './components/rulerMeasures.vue'
 import howitworks from './components/howitworks.vue'
 import headerApp from './components/headerApp.vue'
 import appFooter from './components/footer.vue'
@@ -19,6 +21,6 @@ import './assets/sass/style.scss'
 
 export default {
   name: 'app',
-  components: { Fragment, rulerApp, appFooter, howitworks, headerApp, contribute }
+  components: { Fragment, rulerApp, rulerMeasures, appFooter, howitworks, headerApp, contribute }
 }
 </script>
