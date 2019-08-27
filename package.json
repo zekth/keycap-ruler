@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claviers/keycap-ruler.git"
+    "url": "git+https://github.com/mkbdfr/keycap-ruler.git"
   },
   "author": "LE GOFF Vincent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/claviers/keycap-ruler/issues"
+    "url": "https://github.com/mkbdfr/keycap-ruler/issues"
   },
-  "homepage": "https://github.com/claviers/keycap-ruler#readme",
+  "homepage": "https://github.com/mkbdfr/keycap-ruler#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "clean-webpack-plugin": "^0.1.19",

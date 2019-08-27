@@ -1,4 +1,4 @@
-# Keycap-Ruler [![Build Status](https://travis-ci.org/claviers/keycap-ruler.svg?branch=master)](https://travis-ci.org/claviers/keycap-ruler)
+# Keycap-Ruler [![Build Status](https://travis-ci.org/mkbdfr/keycap-ruler.svg?branch=master)](https://travis-ci.org/mkbdfr/keycap-ruler)
 
 A simple tool to measure the size of your keycaps
 
