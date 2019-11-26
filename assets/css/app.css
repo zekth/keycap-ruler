@@ -1,32 +1,6 @@
+.credit-container[data-v-655cc7b6]{z-index:-1;background:#bf8226;background:-moz-linear-gradient(top, #bf8226 32%, #000 74%, #000 74%);background:-webkit-linear-gradient(top, #bf8226 32%, #000 74%, #000 74%);background:linear-gradient(to bottom, #bf8226 32%, #000 74%, #000 74%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf8226', endColorstr='#000000',GradientType=0 );font-family:montserratbold,sans-serif;color:#e0e0e0;position:relative;border-radius:11px;width:317px;height:199px}.credit-container span[data-v-655cc7b6]{position:absolute}.credit-container .brand[data-v-655cc7b6]{top:12px;left:21px;font-size:25px}.credit-container .card-number[data-v-655cc7b6]{top:110px;left:26px;font-size:21px}.credit-container .exp[data-v-655cc7b6]{top:147px;left:133px;font-size:14px}.credit-container .name[data-v-655cc7b6]{top:156px;left:21px}.credit-container .company[data-v-655cc7b6]{top:172px;left:21px}.credit-container .chip[data-v-655cc7b6]{width:47px;height:43px;position:absolute;top:63px;left:22px;background-color:#525252;border-radius:5px}
 
-.credit-container[data-v-655cc7b6]{z-index:-1;background:#bf8226;background:-moz-linear-gradient(top, #bf8226 32%, #000 74%, #000 74%);background:-webkit-linear-gradient(top, #bf8226 32%, #000 74%, #000 74%);background:linear-gradient(to bottom, #bf8226 32%, #000 74%, #000 74%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf8226', endColorstr='#000000',GradientType=0 );font-family:montserratbold,sans-serif;color:#e0e0e0;position:relative;border-radius:11px;width:317px;height:199px
-}
-.credit-container span[data-v-655cc7b6]{position:absolute
-}
-.credit-container .brand[data-v-655cc7b6]{top:12px;left:21px;font-size:25px
-}
-.credit-container .card-number[data-v-655cc7b6]{top:110px;left:26px;font-size:21px
-}
-.credit-container .exp[data-v-655cc7b6]{top:147px;left:133px;font-size:14px
-}
-.credit-container .name[data-v-655cc7b6]{top:156px;left:21px
-}
-.credit-container .company[data-v-655cc7b6]{top:172px;left:21px
-}
-.credit-container .chip[data-v-655cc7b6]{width:47px;height:43px;position:absolute;top:63px;left:22px;background-color:#525252;border-radius:5px
-}
-
-
-.keycap{background:white;display:inline-block;border:solid 3px black;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;border-radius:7px;margin:0 2px 2px 0
-}
-.keycap.vertical{display:block;margin:0 auto;margin-bottom:20px
-}
-.keycap.vertical .keycap-size{float:none;text-align:center;display:block
-}
-.keycap .keycap-content{margin:0 auto
-}
-.keycap .keycap-size{float:right;margin:2px 5px
-}
+.keycap{background:white;display:inline-block;border:solid 3px black;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;border-radius:7px;margin:0 2px 2px 0}.keycap.vertical{display:block;margin:0 auto;margin-bottom:20px}.keycap.vertical .keycap-size{float:none;text-align:center;display:block}.keycap .keycap-content{margin:0 auto}.keycap .keycap-size{float:right;margin:2px 5px}
 
 footer.footer{background-color:#020b19;color:white}footer.footer a{color:#fdfdfd;font-weight:bold}footer.footer strong{color:white}
 
