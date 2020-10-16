@@ -4,7 +4,7 @@
   "description": "A web app to know the size of you keycaps",
   "scripts": {
     "test": "echo 'lolnop'",
-    "build": "./node_modules/.bin/webpack && cp CNAME ./dist/CNAME && cp ./src/favicon.ico ./dist/favicon.ico",
+    "build": "./node_modules/.bin/webpack && cp ./src/favicon.ico ./dist/favicon.ico",
     "build:dev": "./node_modules/.bin/webpack -d",
     "dev": "npm run build:dev && webpack-dev-server --progress --colors"
   },
