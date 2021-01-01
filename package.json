@@ -43,7 +43,7 @@
     "vuex": "^3.6.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^4.3.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.1"
   },
   "dependencies": {
     "vue-fragment": "^1.5.1",
