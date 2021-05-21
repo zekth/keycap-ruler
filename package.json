@@ -20,7 +20,7 @@
   "homepage": "https://github.com/mkbdfr/keycap-ruler#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "clean-webpack-plugin": "^0.1.19",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.2.5",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^11.0.0",
