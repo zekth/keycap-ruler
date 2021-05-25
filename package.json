@@ -46,7 +46,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "vue-fragment": "^1.5.1",
+    "vue-fragment": "^1.5.2",
     "vue-i18n": "^8.24.4"
   }
 }
